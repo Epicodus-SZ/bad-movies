@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BadMovies</string>
+    <string name="search_by_genre_buttonTitle">Search by Genre</string>
 </resources>
