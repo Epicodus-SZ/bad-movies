@@ -7,7 +7,7 @@ Creation Steps to Create a API connected Android app.
 5. Add latest OkHttp to dependencies `compile 'com.squareup.okhttp3:okhttp:3.9.0'`
 6. Add Internet permissions to the AndroidManifest.xml `<uses-permission android:name="android.permission.INTERNET"/>`
 7. Download Postman and test your API's to call
-8. Create models, services and ui packages.  Move MainActivity to the ui package.
+8. Create adapters, models, services and ui packages.  Move MainActivity to the ui package.
 9. ADD SECRETS TO GRADLE.PROPERTIES: Put your API key values in the file gradle.properties looking like this `StevesLastName = "Zaske"`
 
 *You might want to email yourself a copy of the gradle.properties file, so you can reproduce the app.*
