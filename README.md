@@ -29,7 +29,10 @@ Now you can access your strings in your code using this format = `Constants.STEV
 13. Add a DataService.  Use myRestaurants as an example.
 14. Add a TAG to the MainActivity `public static final String TAG = MainActivity.class.getSimpleName();`
 15. Add ButterKnife to build.gradle `compile 'com.jakewharton:butterknife:8.8.1'` and `annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'`
-16. Add a button to the Activity layout (use BK)
+16. Add a button to the Activity layout (use BK), add an onClick listener.
+17. Create a object class for the object we're pulling from the API
+18. Instantiate the new service, and make the API call.  Pipe results to the LogCat.
+19. If successful, commit and push to github.
 
 
 
@@ -39,4 +42,4 @@ Now you can access your strings in your code using this format = `Constants.STEV
 
 ## INSTRUCTION ON HOW TO GET API ACCESS
 1. First you need to get an API key
-2. Then add a line to your gradle.properties file that looks like this `themoviedb_api_key=YOUR_API_KEY_HERE`
+2. Then add a line to your gradle.properties file that looks like this `themoviedb_api_key="YOUR_API_KEY_HERE"` *be sure to include the quote marks*
