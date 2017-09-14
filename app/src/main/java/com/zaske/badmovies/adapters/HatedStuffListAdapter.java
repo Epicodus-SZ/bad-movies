@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.zaske.badmovies.R;
 import com.zaske.badmovies.models.Genre;
 import com.zaske.badmovies.models.Hated_Stuff;
@@ -47,8 +49,8 @@ public class HatedStuffListAdapter extends RecyclerView.Adapter<HatedStuffListAd
     }
 
     public class HatedViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.nameTextView)
-        TextView mNameTextView;
+        @BindView(R.id.nameTextView) TextView mNameTextView;
+        @BindView(R.id.hatedImageView) ImageView mHatedImageView;
         private Context mContext;
 
         public HatedViewHolder(View itemView) {
@@ -59,6 +61,7 @@ public class HatedStuffListAdapter extends RecyclerView.Adapter<HatedStuffListAd
 
         public void bindHated(Hated_Stuff hated){
             mNameTextView.setText(hated.getName());
+            Picasso.with(mContext).load(hated.getImgUrl()).into(mHatedImageView);
         }
     } //end of HatedViewHolder
 
