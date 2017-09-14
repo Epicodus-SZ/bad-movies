@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.zaske.badmovies.ui.ListGenres">
 
-    <ListView
-        android:id="@+id/genreList"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/genreRecyclerView"
         android:layout_width="368dp"
         android:layout_height="495dp"
         tools:layout_editor_absoluteX="8dp"
